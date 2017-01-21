@@ -291,7 +291,7 @@ setMethod(f = "featureTest", signature = c("loops", "GRanges"),
 #' rda<-paste(system.file('rda',package='diffloop'),'loops.small.rda',sep='/')
 #' load(rda)
 #' np <- loops.small[,1:4]
-#' assoc_np <- quickAssoc(np)
+#' # assoc_np <- quickAssoc(np)
 
 #' @import edgeR
 #' @export
@@ -340,7 +340,7 @@ setMethod(f = "quickAssoc", signature = c("loops"), definition = function(y) {
 #' rda<-paste(system.file('rda',package='diffloop'),'loops.small.rda',sep='/')
 #' load(rda)
 #' np <- loops.small[,1:4]
-#' assoc_np_voom <- quickAssocVoom(np)
+#' #assoc_np_voom <- quickAssocVoom(np)
 
 #' @import limma
 #' @export
@@ -390,8 +390,8 @@ setMethod(f = "quickAssocVoom", signature = c("loops"), definition = function(y)
 #' rda<-paste(system.file('rda',package='diffloop'),'loops.small.rda',sep='/')
 #' load(rda)
 #' np <- loops.small[,1:4]
-#' assoc_np <- quickAssoc(np)
-#' top_np <- topLoops(assoc_np, FDR = 0.3)
+#' # assoc_np <- quickAssoc(np)
+#' # top_np <- topLoops(assoc_np, FDR = 0.3)
 
 #' @export
 setGeneric(name = "topLoops", def = function(dlo, FDR, PValue) standardGeneric("topLoops"))

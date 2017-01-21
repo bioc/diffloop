@@ -108,8 +108,7 @@ setMethod(f = "union", signature = c("loops", "loops"), definition = function(x,
     
     # Update colData
     unsorted <- rbind(x@colData, y@colData)
-    newcolData <- unsorted[match(colnames(newCounts), rownames(unsorted)), 
-        ]
+    newcolData <- unsorted[match(colnames(newCounts), rownames(unsorted)), ]
     cat("Check for NAs; Subset this object from  more comprehensive object\n")
     
     # Initialize rowData slot (with loop widths)

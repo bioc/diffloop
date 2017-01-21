@@ -33,6 +33,6 @@ function.
 rda<-paste(system.file('rda',package='diffloop'),'loops.small.rda',sep='/')
 load(rda)
 np <- loops.small[,1:4]
-assoc_np <- quickAssoc(np)
+# assoc_np <- quickAssoc(np)
 }
 
