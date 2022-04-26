@@ -1,7 +1,7 @@
 Package: diffloop
 Type: Package
 Title: Identifying differential DNA loops from chromatin topology data
-Version: 1.24.0
+Version: 1.25.0
 Date: 2021-11-20
 Authors@R: c(
     person("Caleb", "Lareau", email = "caleblareau@g.harvard.edu", role = c("aut", "cre")),
